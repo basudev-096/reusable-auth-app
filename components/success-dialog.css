@@ -1,0 +1,12 @@
+.dialog-07-bubble {
+  animation: dialog-07-float infinite ease-in-out;
+}
+
+@keyframes dialog-07-float {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateY(0) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-10px) scale(1.1);
+  }
+}

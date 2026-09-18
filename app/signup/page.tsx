@@ -1,0 +1,34 @@
+"use client"
+
+import { SignupForm } from "@/components/signup-form"
+import { GalleryVerticalEndIcon } from "lucide-react"
+
+export default function SignupPage() {
+  return (
+    <div className="grid min-h-svh lg:grid-cols-2">
+      <div className="flex flex-col gap-4 p-6 md:p-10">
+        <div className="flex justify-center gap-2 md:justify-start">
+          <a href="#" className="flex items-center gap-2 font-medium">
+            <div className="flex size-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
+              <GalleryVerticalEndIcon className="size-4" />
+            </div>
+            Acme Inc.
+          </a>
+        </div>
+        <div className="flex flex-1 items-center justify-center">
+          <div className="w-full max-w-xs">
+            <SignupForm />
+          </div>
+        </div>
+      </div>
+      <div className="relative hidden bg-muted lg:block">
+        <img
+          loading="lazy" decoding="async"
+          src="https://images.unsplash.com/photo-1698044048234-2e7f6c4e6aca?q=80&w=1000&auto=format"
+          alt="Blog Post Image"
+          className="size-full object-cover"
+        />
+      </div>
+    </div>
+  )
+}
